@@ -1,0 +1,74 @@
+.tasklist {
+  height: 100%;
+}
+.task-list-container {
+  display: flex;
+  gap: 45px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.task-item {
+  width: 343px;
+  height: 72px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid #a35709;
+  display: flex;
+  justify-content: space-between;
+}
+.task-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #f0e3ca;
+}
+.task-description {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f0e3ca;
+  white-space: nowrap;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Notask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.notext {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #ffffff;
+}
+.line {
+  border: 3px solid #ff8303;
+  width: 64px;
+  margin: 12px 0;
+}
+.task-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #a35709;
+  background-color: #242320;
+}
+.edit-btn-background {
+  background-color: #a35709;
+}
+
+@media screen and (max-width: 720px) {
+  .task-item {
+    width: 100%;
+  }
+  .task-list-container {
+    row-gap: 18px !important;
+  }
+}
