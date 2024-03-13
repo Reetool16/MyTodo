@@ -61,7 +61,7 @@ function App() {
         </div>
         <div
           className={`todo-list-container ${
-            tasks.length === 10 ? "overflow" : ""
+            tasks.length >= 10 ? "overflow" : ""
           }`}
         >
           <TaskList
