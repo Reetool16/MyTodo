@@ -71,4 +71,7 @@
   .task-list-container {
     row-gap: 18px !important;
   }
+  .tasklist {
+    height: 50%;
+  }
 }
